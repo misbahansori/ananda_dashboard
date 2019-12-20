@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ananda dashboard</title>
     <link rel="stylesheet" href="build/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap" rel="stylesheet">
 </head>
 
 <body class="font-sans text-gray-700 bg-gray-100">
-    <div class="flex" id="app">
-        <div class="w-2/3 py-16 pl-16 pr-8">
-            <div class="flex items-start justify-between">
-                <div class="flex items-center">
+    <div class="flex flex-wrap" id="app">
+        <div class="w-full p-8 lg:py-16 lg:pl-16 lg:w-2/3">
+            <div class="lg:flex lg:items-start lg:justify-between">
+                <div class="flex items-center w-full">
                     <button class="p-3 bg-blue-500 rounded-xl focus:outline-none focus:shadow-outline">
                         <svg viewBox="0 0 24 24" class="w-5 h-5 text-white fill-current">
                             <path class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
@@ -24,18 +24,18 @@
                         ananda
                     </span>
                 </div>
-                <div class="flex p-4 bg-white rounded-xl">
-                    <div class="flex items-center px-6 border-r border-gray-200">
+                <div class="flex p-4 mt-8 bg-white lg:mt-0 rounded-xl">
+                    <div class="flex items-center px-4 whitespace-no-wrap border-r border-gray-200">
                         <span>All Categories</span>
                         <svg class="w-5 h-5 ml-1 text-gray-400 fill-current " viewBox="0 0 24 24">
                             <path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/>
                         </svg>
                     </div>
-                    <div class="flex items-center px-4">
+                    <div class="flex items-center px-2 whitespace-no-wrap">
                         <svg class="w-5 h-5 ml-5 text-gray-400 fill-current" viewBox="0 0 24 24">
                             <path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
                         </svg>
-                        <input type="text" class="px-1 focus:outline-none" placeholder="search">
+                        <input type="text" class="w-full px-1 lg:w-40 focus:outline-none" placeholder="search">
                     </div>
                 </div>
             </div>
@@ -48,8 +48,8 @@
                     see more
                 </a>
             </div>
-            <div class="flex flex-wrap mt-4 -mx-2">
-                <div class="w-1/3 h-64">
+            <div class="flex flex-col flex-wrap h-64 mt-4 -mx-2 overflow-hidden">
+                <div class="w-1/2 h-64 lg:w-1/3">
                     <div class="relative h-full p-2">
                         <div class="absolute inset-0 m-2 bg-red-500 opacity-25 rounded-xl"></div>
                         <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1567538096621-38d2284b23ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
@@ -64,8 +64,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="flex flex-wrap w-2/3">
-                    <div class="w-1/4 h-32">
+                <div class="flex flex-wrap w-1/2 lg:w-2/3">
+                    <div class="w-1/2 h-32 lg:w-1/4">
                         <div class="relative h-full p-2">
                             <div class="absolute inset-0 m-2 bg-blue-500 opacity-25 rounded-xl"></div>
                             <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
@@ -75,7 +75,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="w-1/4 h-32">
+                    <div class="w-1/2 h-32 lg:w-1/4">
                         <div class="relative h-full p-2">
                             <div class="absolute inset-0 m-2 bg-green-500 opacity-25 rounded-xl"></div>
                             <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1511389290465-d11bafd4c1df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
@@ -85,7 +85,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="w-2/4 h-32">
+                    <div class="w-full h-32 lg:w-2/4">
                         <div class="relative h-full p-2">
                             <div class="absolute inset-0 m-2 bg-yellow-500 opacity-25 rounded-xl"></div>
                             <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
@@ -95,7 +95,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="w-2/5 h-32">
+                    <div class="w-full h-32 lg:w-2/5">
                         <div class="relative h-full p-2">
                             <div class="absolute inset-0 m-2 bg-pink-500 opacity-25 rounded-xl"></div>
                             <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1502920924215-5646fe685bef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
@@ -105,7 +105,7 @@
                             </span>
                         </div>
                     </div>
-                    <div class="w-3/5 h-32">
+                    <div class="w-full h-32 lg:w-3/5">
                         <div class="relative h-full p-2">
                             <div class="absolute inset-0 m-2 bg-purple-500 opacity-25 rounded-xl"></div>
                             <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1528865832260-267768cb76ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
@@ -127,8 +127,8 @@
                     see more
                 </a>
             </div>
-            <div class="flex flex-wrap mt-8 -mx-2">
-                <div class="w-40 h-48 mx-2 bg-white rounded-xl">
+            <div class="flex flex-wrap mt-8 -m-2">
+                <div class="w-40 h-48 m-2 bg-white rounded-xl">
                     <div class="relative">
                         <div class="absolute inset-0 bg-yellow-500 opacity-25 rounded-xl"></div>
                         <img class="object-cover w-full h-24 rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-40 h-48 mx-2 bg-white rounded-xl">
+                <div class="w-40 h-48 m-2 bg-white rounded-xl">
                     <div class="relative">
                         <div class="absolute inset-0 bg-pink-500 opacity-25 rounded-xl"></div>
                         <img class="object-cover w-full h-24 rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1545398865-0062dafeb74d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-40 h-48 mx-2 bg-white rounded-xl">
+                <div class="w-40 h-48 m-2 bg-white rounded-xl">
                     <div class="relative">
                         <div class="absolute inset-0 bg-green-500 opacity-25 rounded-xl"></div>
                         <img class="object-cover w-full h-24 rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1533540227548-9fd63a4415fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
@@ -175,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-40 h-48 mx-2 bg-white rounded-xl">
+                <div class="w-40 h-48 m-2 bg-white rounded-xl">
                     <div class="relative">
                         <div class="absolute inset-0 bg-blue-500 opacity-25 rounded-xl"></div>
                         <img class="object-cover w-full h-24 rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
@@ -194,9 +194,9 @@
                 </div>
             </div>
         </div>
-        <div class="w-1/3 p-6">
-            <div class="relative h-full p-10 bg-blue-500 rounded-xl">
-                <div class="flex items-center justify-between">
+        <div class="w-full p-6 lg:w-1/3">
+            <div class="flex flex-col h-full bg-blue-500 rounded-xl">
+                <div class="flex items-center justify-between px-10 pt-10">
                     <button class="p-2 rounded-full outline-none focus:shadow-outline">
                         <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
                             <path class="heroicon-ui" d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z" />
@@ -215,7 +215,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="mt-8">
+                <div class="flex-1 px-10 pb-10 mt-8">
                     <div class="flex items-center w-full pr-4 my-3 bg-blue-400 rounded-xl">
                         <img class="object-cover w-20 h-20 rounded-xl" src="https://images.unsplash.com/photo-1542029001094-3396a824ba27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
                         <div class="flex-1 p-4 text-white">
@@ -304,7 +304,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="absolute bottom-0 left-0 right-0 flex items-center justify-center w-full py-4 text-white bg-blue-600 rounded-bl-xl rounded-br-xl">
+                <button class="flex items-center justify-center w-full py-4 text-white bg-blue-600 rounded-bl-xl rounded-br-xl">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path class="heroicon-ui" d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z" />
                     </svg>
