@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ananda dashboard</title>
+    <link rel="stylesheet" href="build/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-sans text-gray-700 bg-gray-100">
+    <div class="flex" id="app">
+        <div class="w-2/3 py-16 pl-16 pr-8">
+            <div class="flex items-start justify-between">
+                <div class="flex items-center">
+                    <button class="p-3 bg-blue-500 rounded-xl focus:outline-none focus:shadow-outline">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5 text-white fill-current">
+                            <path class="heroicon-ui" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                        </svg>
+                    </button>
+                    <span class="ml-2 text-3xl font-semibold text-blue-500">
+                        ananda
+                    </span>
+                </div>
+                <div class="flex p-4 bg-white rounded-xl">
+                    <div class="flex items-center px-6 border-r border-gray-200">
+                        <span>All Categories</span>
+                        <svg class="w-5 h-5 ml-1 text-gray-400 fill-current " viewBox="0 0 24 24">
+                            <path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <svg class="w-5 h-5 ml-5 text-gray-400 fill-current" viewBox="0 0 24 24">
+                            <path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/>
+                        </svg>
+                        <input type="text" class="px-1 focus:outline-none" placeholder="search">
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between mt-8">
+                <div>
+                    <span class="text-3xl font-bold">Discover</span class="text-3xl">
+                    <span class="text-3xl">the best</span>
+                </div>
+                <a href="#" class="font-semibold text-blue-500">
+                    see more
+                </a>
+            </div>
+            <div class="flex flex-wrap mt-4 -mx-2">
+                <div class="w-1/3 h-64">
+                    <div class="relative h-full p-2">
+                        <div class="absolute inset-0 m-2 bg-red-500 opacity-25 rounded-xl"></div>
+                        <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1567538096621-38d2284b23ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
+                        <span class="absolute bottom-0 left-0 m-4 text-white">
+                            <span class="font-semibold">Chairs</span>
+                            <span>353</span>
+                        </span>
+                        <button class="absolute bottom-0 right-0 flex items-center justify-center w-12 h-12 m-2 bg-white rounded-tl-xl rounded-br-xl">
+                            <svg viewBox="0 0 24 24" class="w-5 h-5 text-blue-500 fill-current">
+                                <path class="heroicon-ui" d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-wrap w-2/3">
+                    <div class="w-1/4 h-32">
+                        <div class="relative h-full p-2">
+                            <div class="absolute inset-0 m-2 bg-blue-500 opacity-25 rounded-xl"></div>
+                            <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80">
+                            <span class="absolute bottom-0 left-0 m-4 text-white">
+                                <span class="font-semibold">Tables</span>
+                                <span>3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-1/4 h-32">
+                        <div class="relative h-full p-2">
+                            <div class="absolute inset-0 m-2 bg-green-500 opacity-25 rounded-xl"></div>
+                            <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1511389290465-d11bafd4c1df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                            <span class="absolute bottom-0 left-0 m-4 text-white">
+                                <span class="font-semibold">Tables</span>
+                                <span>3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-2/4 h-32">
+                        <div class="relative h-full p-2">
+                            <div class="absolute inset-0 m-2 bg-yellow-500 opacity-25 rounded-xl"></div>
+                            <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                            <span class="absolute bottom-0 left-0 m-4 text-white">
+                                <span class="font-semibold">Tables</span>
+                                <span>3</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-2/5 h-32">
+                        <div class="relative h-full p-2">
+                            <div class="absolute inset-0 m-2 bg-pink-500 opacity-25 rounded-xl"></div>
+                            <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1502920924215-5646fe685bef?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                            <span class="absolute bottom-0 left-0 m-4 text-white">
+                                <span class="font-semibold">Mirrors</span>
+                                <span>54</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-3/5 h-32">
+                        <div class="relative h-full p-2">
+                            <div class="absolute inset-0 m-2 bg-purple-500 opacity-25 rounded-xl"></div>
+                            <img class="object-cover w-full h-full rounded-xl" src="https://images.unsplash.com/photo-1528865832260-267768cb76ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                            <span class="absolute bottom-0 left-0 m-4 text-white">
+                                <span class="font-semibold">Vase</span>
+                                <span>43</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-between mt-10">
+                <div class="flex text-blue-500">
+                    <a href="#" class="px-4 text-gray-500">My Favorite</a>
+                    <a href="#" class="px-4 font-semibold">Previously viewed</a>
+                    <a href="#" class="px-4 text-gray-500">Last Bought</a>
+                </div>
+                <a href="#" class="font-semibold text-blue-500">
+                    see more
+                </a>
+            </div>
+            <div class="flex flex-wrap mt-8 -mx-2">
+                <div class="w-40 h-48 mx-2 bg-white rounded-xl">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-yellow-500 opacity-25 rounded-xl"></div>
+                        <img class="object-cover w-full h-24 rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <div class="absolute flex mx-4">
+                            <div class="block w-3 h-3 -mt-1 bg-green-600 border-2 border-white rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="font-semibold">Odge alice</span>
+                        <div class="font-semibold">
+                            $86.<span class="font-normal text-gray-600">00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-40 h-48 mx-2 bg-white rounded-xl">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-pink-500 opacity-25 rounded-xl"></div>
+                        <img class="object-cover w-full h-24 rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1545398865-0062dafeb74d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                        <div class="absolute flex mx-4">
+                            <button class="block w-3 h-3 mr-1 -mt-1 bg-green-600 border-2 border-white rounded-full"></button>
+                            <button class="block w-3 h-3 mr-1 -mt-1 bg-blue-600 border-2 border-white rounded-full"></button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="font-semibold">Tossberg Gr</span>
+                        <div class="font-semibold">
+                            $125.<span class="font-normal text-gray-600">00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-40 h-48 mx-2 bg-white rounded-xl">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-green-500 opacity-25 rounded-xl"></div>
+                        <img class="object-cover w-full h-24 rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1533540227548-9fd63a4415fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <div class="absolute flex mx-4">
+                            <button class="block w-3 h-3 mr-1 -mt-1 bg-black border-2 border-white rounded-full"></button>
+                            <button class="block w-3 h-3 mr-1 -mt-1 bg-teal-600 border-2 border-white rounded-full"></button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="font-semibold">Leifame</span>
+                        <div class="font-semibold">
+                            $86.<span class="font-normal text-gray-600">00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-40 h-48 mx-2 bg-white rounded-xl">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-500 opacity-25 rounded-xl"></div>
+                        <img class="object-cover w-full h-24 rounded-tl-xl rounded-tr-xl" src="https://images.unsplash.com/photo-1503975817393-b3891b7a3b81?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <div class="absolute flex mx-4">
+                            <button class="block w-3 h-3 mr-1 -mt-1 bg-red-600 border-2 border-white rounded-full"></button>
+                            <button class="block w-3 h-3 mr-1 -mt-1 bg-blue-600 border-2 border-white rounded-full"></button>
+                            <button class="block w-3 h-3 mr-1 -mt-1 bg-indigo-600 border-2 border-white rounded-full"></button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="font-semibold">Tossberg BI</span>
+                        <div class="font-semibold">
+                            $125.<span class="font-normal text-gray-600">00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-1/3 p-6">
+            <div class="relative h-full p-10 bg-blue-500 rounded-xl">
+                <div class="flex items-center justify-between">
+                    <button class="p-2 rounded-full outline-none focus:shadow-outline">
+                        <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                            <path class="heroicon-ui" d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z" />
+                        </svg>
+                    </button>
+                    <div class="flex">
+                        <button class="p-3 mx-1 bg-blue-600 rounded-xl">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path class="heroicon-ui" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2zm0 10v6h14v-6h-2.38l-1.45 2.9a2 2 0 0 1-1.79 1.1h-2.76a2 2 0 0 1-1.8-1.1L7.39 13H5zm14-2V5H5v6h2.38a2 2 0 0 1 1.8 1.1l1.44 2.9h2.76l1.45-2.9a2 2 0 0 1 1.79-1.1H19z" />
+                            </svg>
+                        </button>
+                        <button class="p-3 mx-1 bg-blue-400 rounded-xl">
+                            <svg class="w-4 h-4 text-white fill-current" viewBox="0 0 24 24">
+                                <path class="heroicon-ui" d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <div class="flex items-center w-full pr-4 my-3 bg-blue-400 rounded-xl">
+                        <img class="object-cover w-20 h-20 rounded-xl" src="https://images.unsplash.com/photo-1542029001094-3396a824ba27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <div class="flex-1 p-4 text-white">
+                            <div class="font-bold tracking-wider">Tossberg </div>
+                            <span class="font-semibold">$125.<span class="font-normal">00</span></span>
+                            <span class="text-blue-200">Gray</span>
+                        </div>
+                        <div class="flex flex-col items-center leading-none text-white">
+                            <button class="p-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path class="heroicon-ui" d="M8.7 14.7a1 1 0 0 1-1.4-1.4l4-4a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1-1.4 1.4L12 11.42l-3.3 3.3z" />
+                                </svg>
+                            </button>
+                            <span>1</span>
+                            <button class="p-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full pr-4 my-3 bg-blue-400 rounded-xl">
+                        <img class="object-cover w-20 h-20 rounded-xl" src="https://images.unsplash.com/photo-1506326426992-32b61983f2fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+                        <div class="flex-1 p-4 text-white">
+                            <div class="font-bold tracking-wider">Tossberg </div>
+                            <span class="font-semibold">$125.<span class="font-normal">00</span></span>
+                            <span class="text-blue-200">Gray</span>
+                        </div>
+                        <div class="flex flex-col items-center leading-none text-white">
+                            <button class="p-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path class="heroicon-ui" d="M8.7 14.7a1 1 0 0 1-1.4-1.4l4-4a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1-1.4 1.4L12 11.42l-3.3 3.3z" />
+                                </svg>
+                            </button>
+                            <span>7</span>
+                            <button class="p-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex items-center w-full pr-4 my-3 bg-blue-400 rounded-xl">
+                        <img class="object-cover w-20 h-20 rounded-xl" src="https://images.unsplash.com/photo-1561677978-583a8c7a4b43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60">
+                        <div class="flex-1 p-4 text-white">
+                            <div class="font-bold tracking-wider">Tossberg </div>
+                            <span class="font-semibold">$125.<span class="font-normal">00</span></span>
+                            <span class="text-blue-200">Gray</span>
+                        </div>
+                        <div class="flex flex-col items-center leading-none text-white">
+                            <button class="p-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path class="heroicon-ui" d="M8.7 14.7a1 1 0 0 1-1.4-1.4l4-4a1 1 0 0 1 1.4 0l4 4a1 1 0 0 1-1.4 1.4L12 11.42l-3.3 3.3z" />
+                                </svg>
+                            </button>
+                            <span>4</span>
+                            <button class="p-1">
+                                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                                    <path class="heroicon-ui" d="M15.3 9.3a1 1 0 0 1 1.4 1.4l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 0 1 1.4-1.4l3.3 3.29 3.3-3.3z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6 mt-8 leading-loose text-white bg-blue-400 rounded-xl">
+                        <div class="flex justify-between">
+                            <span>Subtotal</span>
+                            <span>$25.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                Shipment
+                                <a href="#" class="text-sm text-blue-300 underline">Check detail</a>
+                            </div>
+                            <span>$12.00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <div>
+                                Discount
+                                <a href="#" class="text-sm text-blue-300 underline">Remove</a>
+                            </div>
+                            <span>$10.00</span>
+                        </div>
+                        <div class="flex justify-between mt-2 text-xl font-bold border-t border-blue-300">
+                            <span>Total</span>
+                            <span>$25.00</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="absolute bottom-0 left-0 right-0 flex items-center justify-center w-full py-4 text-white bg-blue-600 rounded-bl-xl rounded-br-xl">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path class="heroicon-ui" d="M17 11a1 1 0 0 1 0 2h-4v4a1 1 0 0 1-2 0v-4H7a1 1 0 0 1 0-2h4V7a1 1 0 0 1 2 0v4h4z" />
+                    </svg>
+                    <span class="text-sm font-semibold tracking-wider uppercase">Checkout payment</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
